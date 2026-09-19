@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+.cabecalho {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 1rem;
+}
+
+.identidade {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.identidade img {
+    width: 70px;
+    height: auto;
+}
+
+.identidade a {
+    display: block;
+}
+
+.nome-site {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.cidade {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.botao-menu {
+    display: block;
+    margin: 1rem 0 0 auto;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1e3a5f;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
+.navegacao a {
+    display: block;
+    padding: 0.7rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.navegacao a:hover,
+.navegacao .pagina-atual {
+    background-color: #152b47;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.titulo-pagina {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.titulo-pagina h1 {
+    color: #1e3a5f;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.titulo-pagina p {
+    margin-bottom: 0;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.controles h2 {
+    color: #1e3a5f;
+    margin-bottom: 0;
+}
+
+.botoes-visualizacao {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.botao-visualizacao {
+    border: 1px solid #1e3a5f;
+    background-color: white;
+    color: #1e3a5f;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao-visualizacao:hover,
+.botao-visualizacao.ativo {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cartao {
+    background-color: white;
+    border: 1px solid #d5dbe0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.cartao img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.cartao h3 {
+    color: #1e3a5f;
+    margin-bottom: 0.7rem;
+}
+
+.cartao p {
+    margin-bottom: 0.6rem;
+}
+
+.cartao a {
+    color: #1e3a5f;
+    font-weight: bold;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.lista .cartao {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.4rem 1rem;
+    align-items: center;
+}
+
+.lista .cartao img {
+    grid-row: span 5;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.lista .cartao h3,
+.lista .cartao p,
+.lista .cartao a {
+    margin: 0;
+}
+
+.rodape {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.rodape-contato,
+.rodape-desenvolvimento {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape h2 {
+    font-size: 1.2rem;
+}
+
+.rodape p {
+    margin-bottom: 0.5rem;
+}
+
+.rodape-desenvolvimento {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}

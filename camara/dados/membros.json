@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Mercadinho Central",
+    "address": "Rua das Flores, 120",
+    "phone": "(83) 99999-1111",
+    "website": "https://mercadinhocentral.com",
+    "image": "mercado.svg",
+    "membership": 3
+  },
+  {
+    "name": "Padaria Sol Nascente",
+    "address": "Av. Beira Rio, 500",
+    "phone": "(83) 99999-2222",
+    "website": "https://padariasol.com",
+    "image": "padaria.svg",
+    "membership": 2
+  },
+  {
+    "name": "Farmácia Popular",
+    "address": "Rua das Acácias, 50",
+    "phone": "(83) 99999-3333",
+    "website": "https://farmaciapopular.com",
+    "image": "farmacia.svg",
+    "membership": 1
+  },
+  {
+    "name": "Construtora Nordeste",
+    "address": "Av. Epitácio Pessoa, 400",
+    "phone": "(83) 99999-4444",
+    "website": "https://construtoranordeste.com",
+    "image": "construtora.svg",
+    "membership": 3
+  },
+  {
+    "name": "Academia Fit Life",
+    "address": "Rua do Sol, 78",
+    "phone": "(83) 99999-5555",
+    "website": "https://fitlife.com",
+    "image": "academia.svg",
+    "membership": 2
+  },
+  {
+    "name": "Pousada Paraíso",
+    "address": "Praia de Tambaú, 120",
+    "phone": "(83) 99999-6666",
+    "website": "https://pousadaparaiso.com",
+    "image": "pousada.svg",
+    "membership": 3
+  },
+  {
+    "name": "Tech Solutions",
+    "address": "Av. João Câncio, 900",
+    "phone": "(83) 99999-7777",
+    "website": "https://techsolutions.com",
+    "image": "tech.svg",
+    "membership": 2
+  }
+]

@@ -1,0 +1,77 @@
+@media screen and (min-width: 700px) {
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    .identidade img {
+        width: 90px;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .navegacao {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+        gap: 0.3rem;
+    }
+
+    .navegacao a {
+        padding: 0.7rem 0.9rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .titulo-pagina {
+        padding: 2rem 0;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 2.5rem;
+    }
+
+    .controles {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grade {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .cartao img {
+        height: 180px;
+    }
+
+    .lista .cartao {
+        grid-template-columns: 160px 1fr;
+    }
+
+    .lista .cartao img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .rodape {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .rodape-desenvolvimento {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

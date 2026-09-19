@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="#f5f7fa"/>
+<rect width="800" height="330" fill="#168aad"/>
+<text x="400" y="185" text-anchor="middle" font-size="100" fill="white">✚</text>
+<text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#222">Farmácia Popular</text>
+<text x="400" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#555">Câmara de Comércio de João Pessoa</text>
+</svg>
