@@ -176,10 +176,7 @@ main {
 }
 
 .lista .cartao img {
-    grid-row: span 5;
-    width: 100px;
-    height: 100px;
-    margin: 0;
+    display: none;
 }
 
 .lista .cartao h3,
@@ -215,6 +212,8 @@ main {
     padding-top: 1rem;
 }
 
+/* Banner */
+
 .banner-tambau {
     position: relative;
     width: 100%;
@@ -234,9 +233,10 @@ main {
     content: "";
     position: absolute;
     inset: 0;
+
     background: linear-gradient(90deg,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.20),
             rgba(0, 0, 0, 0.05));
 }
 
@@ -246,8 +246,18 @@ main {
     top: 50%;
     left: 6%;
     transform: translateY(-50%);
+
     max-width: 650px;
+
     color: white;
+
+    background-color: transparent;
+
+    padding: 0;
+
+    border-radius: 0;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .banner-conteudo h1 {
@@ -272,8 +282,4 @@ main {
     color: white;
     font-weight: 500;
     line-height: 1.4;
-}
-
-.lista .cartao img {
-    display: none;
 }
