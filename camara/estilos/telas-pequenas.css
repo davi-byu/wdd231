@@ -49,10 +49,14 @@ body {
 }
 
 .navegacao {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 0.3rem;
     margin-top: 1rem;
+}
+
+.navegacao.aberto {
+    display: flex;
 }
 
 .navegacao a {
@@ -60,6 +64,7 @@ body {
     padding: 0.7rem;
     text-decoration: none;
     border-radius: 4px;
+    color: white;
 }
 
 .navegacao a:hover,
@@ -208,4 +213,67 @@ main {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: 1rem;
     padding-top: 1rem;
+}
+
+.banner-tambau {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.banner-tambau img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-tambau::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.05));
+}
+
+.banner-conteudo {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    color: white;
+}
+
+.banner-conteudo h1 {
+    margin: 0 0 15px;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+.banner-conteudo p {
+    margin: 0;
+    color: white;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+.localizacao-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.lista .cartao img {
+    display: none;
 }

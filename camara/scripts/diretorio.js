@@ -1,10 +1,26 @@
+const botaoMenu = document.querySelector("#botao-menu");
+const navegacao = document.querySelector("#navegacao");
+
 const membrosContainer = document.querySelector("#membros");
 const botaoGrade = document.querySelector("#botao-grade");
 const botaoLista = document.querySelector("#botao-lista");
 
+botaoMenu.addEventListener("click", () => {
+    navegacao.classList.toggle("aberto");
+
+    if (navegacao.classList.contains("aberto")) {
+        botaoMenu.textContent = "✕";
+        botaoMenu.setAttribute("aria-label", "Fechar menu");
+    } else {
+        botaoMenu.textContent = "☰";
+        botaoMenu.setAttribute("aria-label", "Abrir menu");
+    }
+});
+
 async function carregarMembros() {
     const resposta = await fetch("dados/membros.json");
     const membros = await resposta.json();
+
     exibirMembros(membros);
 }
 
@@ -19,15 +35,33 @@ function exibirMembros(membros) {
 
     membros.forEach((membro) => {
         const card = document.createElement("article");
+
         card.classList.add("cartao");
 
         card.innerHTML = `
-            <img src="imagens/camara_imagens/empresas/${membro.image}" alt="${membro.name}">
+            <img
+                src="imagens/camara_imagens/empresas/${membro.image}"
+                alt="${membro.name}"
+            >
+
             <h3>${membro.name}</h3>
-            <p><strong>${nivelAssociacao(membro.membership)}</strong></p>
+
+            <p>
+                <strong>
+                    ${nivelAssociacao(membro.membership)}
+                </strong>
+            </p>
+
             <p>${membro.address}</p>
+
             <p>${membro.phone}</p>
-            <a href="${membro.website}" target="_blank" rel="noopener noreferrer">Visitar site</a>
+
+            <a
+                href="${membro.website}"
+                target="_blank"
+                rel="noopener noreferrer">
+                Visitar site
+            </a>
         `;
 
         membrosContainer.appendChild(card);
@@ -50,8 +84,10 @@ botaoLista.addEventListener("click", () => {
     botaoGrade.classList.remove("ativo");
 });
 
-document.querySelector("#ano").textContent = new Date().getFullYear();
+document.querySelector("#ano").textContent =
+    new Date().getFullYear();
 
-document.querySelector("#ultima-modificacao").textContent = document.lastModified;
+document.querySelector("#ultima-modificacao").textContent =
+    document.lastModified;
 
 carregarMembros();
