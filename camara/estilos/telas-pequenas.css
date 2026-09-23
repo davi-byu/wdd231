@@ -283,3 +283,170 @@ main {
     font-weight: 500;
     line-height: 1.4;
 }
+
+#membros-destaque {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cartao-destaque {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+.cartao-destaque img {
+    width: 200px !important;
+    height: 140px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.cartao-destaque h3 {
+    margin: 0.5rem 0;
+}
+
+.cartao-destaque p {
+    margin: 0.5rem 0;
+}
+
+.cartao-destaque a {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+#membros-destaque .cartao-destaque img {
+    width: 220px !important;
+    height: 160px !important;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+#membros-destaque .cartao-destaque h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+#membros-destaque .cartao-destaque p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+#membros-destaque .cartao-destaque a {
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-conteudo {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.hero-conteudo h1 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.botao-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #d97706;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.clima,
+.eventos,
+.destaques {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.clima h2,
+.eventos h2,
+.destaques h2 {
+    margin-top: 0;
+    color: #1f3f66;
+}
+
+.clima-atual {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #eef5fb;
+    border-left: 5px solid #1f3f66;
+    border-radius: 6px;
+}
+
+.previsao-dias {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.previsao-dias article {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    border: 1px solid #d9e0e7;
+}
+
+.previsao-dias h4 {
+    margin-top: 0;
+    color: #1f3f66;
+}
+
+.lista-eventos {
+    display: grid;
+    gap: 1rem;
+}
+
+.lista-eventos article {
+    padding: 1rem;
+    border-left: 5px solid #d97706;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.lista-eventos h3 {
+    margin-top: 0;
+}
+
+#membros-destaque {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#membros-destaque .cartao-destaque {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
