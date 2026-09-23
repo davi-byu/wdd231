@@ -1,5 +1,4 @@
 @media screen and (min-width: 700px) {
-
     .cabecalho {
         display: flex;
         align-items: center;
@@ -73,12 +72,12 @@
     }
 
     .lista .cartao {
-            grid-template-columns: 1fr;
-        }
-    
+        grid-template-columns: 1fr;
+    }
+
     .lista .cartao img {
-            display: none;
-        }
+        display: none;
+    }
 
     .rodape {
         display: grid;
@@ -92,33 +91,18 @@
         margin-top: 0;
         padding-top: 0;
     }
-}
 
-#membros-destaque {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.cartao-destaque {
-    padding: 1.5rem;
-}
-
-.cartao-destaque img {
-    width: 120px !important;
-    height: 120px !important;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 1rem;
-}
-
-@media (min-width: 768px) {
     .hero-conteudo {
-        padding: 2rem;
+        left: 3rem;
+        right: 3rem;
     }
 
     .hero-conteudo h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .hero-conteudo p {
+        font-size: 1.15rem;
     }
 
     .previsao-dias {
