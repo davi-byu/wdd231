@@ -2,39 +2,24 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Diretório da Câmara de Comércio de João Pessoa, Paraíba. Encontre empresas e organizações associadas à Câmara de Comércio.">
-
-    <meta name="author" content="Davi Victor">
-
-    <meta property="og:title" content="Diretório | Câmara de Comércio de João Pessoa">
-
-    <meta property="og:description"
-        content="Conheça as empresas e organizações associadas à Câmara de Comércio de João Pessoa.">
-
-    <meta property="og:image" content="https://davi-byu.github.io/wdd231/camara/imagens/camara_imagens/logo.svg">
-
-    <meta property="og:url" content="https://davi-byu.github.io/wdd231/camara/diretorio.html">
-
-    <link rel="canonical" href="https://davi-byu.github.io/wdd231/camara/diretorio.html">
-
-    <meta property="og:type" content="website">
+    <title>Agradecimento | Câmara de Comércio de João Pessoa</title>
 
     <link rel="icon" href="imagens/camara_imagens/favicon.svg">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
 
-    <title>Diretório | Câmara de Comércio de João Pessoa</title>
 </head>
 
 <body>
@@ -43,7 +28,7 @@
 
         <div class="identidade">
 
-            <a href="diretorio.html">
+            <a href="index.html">
                 <img src="imagens/camara_imagens/logo.svg" alt="Logo da Câmara de Comércio de João Pessoa">
             </a>
 
@@ -62,7 +47,7 @@
 
             <a href="index.html">Início</a>
 
-            <a href="diretorio.html" class="pagina-atual">
+            <a href="diretorio.html">
                 Diretório
             </a>
 
@@ -87,87 +72,90 @@
     </header>
 
     <main>
-
-        <section class="banner-tambau">
-
-            <img src="imagens/tambau.webp" alt="Orla de Tambaú em João Pessoa, Paraíba">
-
-            <div class="banner-conteudo">
-
-                <h1>Diretório de Membros</h1>
-
-                <p>
-                    Conheça as empresas e organizações associadas
-                    à Câmara de Comércio de João Pessoa.
-                </p>
-
-                <div class="localizacao-banner">
-                    📍 Orla de Tambaú<br>
-                    João Pessoa - PB
-                </div>
-
-            </div>
-
+    
+        <section class="titulo-pagina">
+    
+            <h1>Obrigado por se associar!</h1>
+    
+            <p>
+                Recebemos sua solicitação de associação à Câmara de Comércio de João Pessoa.
+            </p>
+    
         </section>
-
-        <section class="controles">
-
-            <h2>Empresas Associadas</h2>
-
-            <div class="botoes-visualizacao">
-
-                <button id="botao-grade" class="botao-visualizacao ativo" type="button">
-                    ▦ Grade
-                </button>
-
-                <button id="botao-lista" class="botao-visualizacao" type="button">
-                    ☰ Lista
-                </button>
-
-            </div>
-
+    
+        <section class="dados-associacao">
+    
+            <h2>Dados da solicitação</h2>
+    
+            <p>
+                <strong>Nome:</strong>
+                <span id="nome"></span>
+            </p>
+    
+            <p>
+                <strong>Sobrenome:</strong>
+                <span id="sobrenome"></span>
+            </p>
+    
+            <p>
+                <strong>E-mail:</strong>
+                <span id="email"></span>
+            </p>
+    
+            <p>
+                <strong>Telefone:</strong>
+                <span id="telefone"></span>
+            </p>
+    
+            <p>
+                <strong>Organização:</strong>
+                <span id="organizacao"></span>
+            </p>
+    
+            <p>
+                <strong>Data e hora da solicitação:</strong>
+                <span id="timestamp"></span>
+            </p>
+    
         </section>
-
-        <section id="membros" class="grade" aria-label="Lista de empresas associadas">
-        </section>
-
+    
     </main>
 
     <footer class="rodape">
-
+    
         <div class="rodape-contato">
-
+    
             <h2>Câmara de Comércio de João Pessoa</h2>
-
+    
             <p>João Pessoa - Paraíba, Brasil</p>
-
+    
             <p>contato@camarajp.com.br</p>
-
+    
             <p>(83) 99999-0000</p>
-
+    
         </div>
-
+    
         <div class="rodape-desenvolvimento">
-
+    
             <p>
                 WDD 231 - Desenvolvimento Frontend para Web I
             </p>
-
+    
             <p>
                 © <span id="ano"></span>
                 Câmara de Comércio de João Pessoa
             </p>
-
+    
             <p>
                 Última modificação:
                 <span id="ultima-modificacao"></span>
             </p>
-
+    
         </div>
-
+    
     </footer>
 
-    <script src="scripts/diretorio.js"></script>
+    <script src="scripts/agradecimento.js"></script>
 
 </body>
 
