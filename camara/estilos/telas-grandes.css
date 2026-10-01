@@ -116,30 +116,30 @@
     #membros-destaque {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-.area-associacao {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items: start;
-}
+    main>.area-associacao {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
 
-.formulario-associacao {
-    grid-column: 1;
-}
+    main>.area-associacao>.formulario-associacao {
+        grid-column: 1;
+    }
 
-.cartoes-associacao {
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 0;
-}
+    main>.area-associacao>.cartoes-associacao {
+        grid-column: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 0;
+    }
 
-.cartao-associacao {
-    min-height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    main>.area-associacao>.cartoes-associacao>.cartao-associacao {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
