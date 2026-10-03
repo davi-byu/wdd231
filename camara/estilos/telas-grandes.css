@@ -67,16 +67,8 @@
         gap: 1.5rem;
     }
 
-    .cartao img {
-        height: 180px;
-    }
-
     .lista .cartao {
         grid-template-columns: 1fr;
-    }
-
-    .lista .cartao img {
-        display: none;
     }
 
     .rodape {
@@ -103,18 +95,6 @@
 
     .hero-conteudo p {
         font-size: 1.15rem;
-    }
-
-    .previsao-dias {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .lista-eventos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #membros-destaque {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     main>.area-associacao {
