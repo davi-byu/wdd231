@@ -143,3 +143,43 @@
         justify-content: center;
     }
 }
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grade-atracoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "atracao1 atracao2"
+            "atracao3 atracao4"
+            "atracao5 atracao6"
+            "atracao7 atracao8";
+        gap: 1.25rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .grade-atracoes {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-areas:
+            "atracao1 atracao2 atracao3"
+            "atracao4 atracao5 atracao6"
+            ". atracao7 atracao8";
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 641px) {
+    .cartao-atracao {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartao-atracao button {
+        align-self: flex-start;
+        margin-top: auto;
+    }
+
+    .cartao-atracao img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+    }
+}
