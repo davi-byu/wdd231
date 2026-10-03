@@ -1,143 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description"
-        content="Página inicial da Câmara de Comércio de João Pessoa, Paraíba. Conheça eventos, empresas associadas e informações da nossa comunidade empresarial.">
-    
+        content="Conheça a história, a missão e os objetivos da Câmara de Comércio de João Pessoa e sua contribuição para a comunidade empresarial.">
+
     <meta name="author" content="Davi Victor">
-    
-    <meta property="og:title" content="Câmara de Comércio de João Pessoa">
-    
+
+    <meta property="og:title" content="Sobre a Câmara de Comércio de João Pessoa | Paraíba">
+
     <meta property="og:description"
-        content="Conheça as empresas e organizações associadas à Câmara de Comércio de João Pessoa.">
-    
+        content="Conheça a Câmara de Comércio de João Pessoa, sua missão e sua contribuição para o desenvolvimento empresarial da Paraíba.">
+
     <meta property="og:image" content="https://davi-byu.github.io/wdd231/camara/imagens/camara_imagens/logo.svg">
-    
-    <meta property="og:url" content="https://davi-byu.github.io/wdd231/camara/">
-    
+
+    <meta property="og:url" content="https://davi-byu.github.io/wdd231/camara/sobre.html">
+
     <meta property="og:type" content="website">
-    
-    <link rel="canonical" href="https://davi-byu.github.io/wdd231/camara/">
-    
-    <link rel="icon" href="imagens/camara_imagens/favicon.svg">
-    
+
+    <link rel="canonical" href="https://davi-byu.github.io/wdd231/camara/sobre.html">
+
+    <link rel="icon" href="imagens/camara_imagens/favicon.svg" type="image/svg+xml">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
-    
-    <title>Câmara de Comércio de João Pessoa</title>
-</head>
-<body>
-        <header class="cabecalho">
-        
-            <div class="identidade">
-        
-                <a href="index.html">
-                    <img src="imagens/camara_imagens/logo.svg" alt="Logo da Câmara de Comércio de João Pessoa">
-                </a>
-        
-                <div>
-                    <p class="nome-site">Câmara de Comércio</p>
-                    <p class="cidade">João Pessoa - PB</p>
-                </div>
-        
-            </div>
-        
-            <button class="botao-menu" id="botao-menu" type="button" aria-label="Abrir menu">
-                ☰
-            </button>
-        
-            <nav class="navegacao" id="navegacao">
-        
-                <a href="index.html" class="pagina-atual">
-                    Início
-                </a>
-        
-                <a href="diretorio.html">
-                    Diretório
-                </a>
-        
-                <a href="associacao.html">
-                    Associe-se
-                </a>
-        
-                <a href="sobre.html">
-                    Sobre
-                </a>
-        
-                <a href="eventos.html">
-                    Eventos
-                </a>
-        
-                <a href="podcast.html">
-                    Podcast
-                </a>
-        
-            </nav>
-        
-        </header>
-        <main>
 
-                <h1>Descubra João Pessoa</h1>
-                
-                <section id="mensagem-visita" aria-live="polite">
-                </section>
-                
-                <section class="grade-atracoes" id="grade-atracoes">
-                </section>
-            
-        </main>
-        <footer class="rodape">
-        
-            <div class="rodape-contato">
-        
-                <h2>
-                    Câmara de Comércio de João Pessoa
-                </h2>
-        
-                <p>
-                    João Pessoa - Paraíba, Brasil
-                </p>
-        
-                <p>
-                    contato@camarajp.com.br
-                </p>
-        
-                <p>
-                    (83) 99999-0000
-                </p>
-        
+    <title>Sobre | Câmara de Comércio de João Pessoa</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <div class="identidade">
+
+            <a href="index.html">
+                <img src="imagens/camara_imagens/logo.svg" alt="Logo da Câmara de Comércio de João Pessoa">
+            </a>
+
+            <div>
+                <p class="nome-site">Câmara de Comércio</p>
+                <p class="cidade">João Pessoa - PB</p>
             </div>
-        
-            <div class="rodape-desenvolvimento">
-        
-                <p>
-                    WDD 231 - Desenvolvimento Frontend para Web I
-                </p>
-        
-                <p>
-                    © <span id="ano"></span>
-                    Câmara de Comércio de João Pessoa
-                </p>
-        
-                <p>
-                    Última modificação:
-                    <span id="ultima-modificacao"></span>
-                </p>
-        
-            </div>
-        
-        </footer>
-        
-        <script src="scripts/index.js"></script>
-        <script type="module" src="scripts/sobre.js"></script>
+
+        </div>
+
+        <button class="botao-menu" id="botao-menu" type="button" aria-label="Abrir menu" aria-controls="navegacao"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navegacao" id="navegacao">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="diretorio.html">
+                Diretório
+            </a>
+
+            <a href="associacao.html">
+                Associe-se
+            </a>
+
+            <a href="sobre.html" class="pagina-atual" aria-current="page">
+                Sobre
+            </a>
+
+            <a href="eventos.html">
+                Eventos
+            </a>
+
+            <a href="podcast.html">
+                Podcast
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Sobre a Câmara de Comércio de João Pessoa</h1>
+
+        <section id="mensagem-visita" aria-live="polite">
+        </section>
+
+        <section class="grade-atracoes" id="grade-atracoes">
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+
+        <div class="rodape-contato">
+
+            <h2>Câmara de Comércio de João Pessoa</h2>
+
+            <p>João Pessoa - Paraíba, Brasil</p>
+
+            <p>contato@camarajp.com.br</p>
+
+            <p>(83) 99999-0000</p>
+
+        </div>
+
+        <div class="rodape-desenvolvimento">
+
+            <p>WDD 231 - Desenvolvimento Frontend para Web I</p>
+
+            <p>
+                © <span id="ano"></span>
+                Câmara de Comércio de João Pessoa
+            </p>
+
+            <p>
+                Última modificação:
+                <span id="ultima-modificacao"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="scripts/sobre.js"></script>
 </body>
+
 </html>
